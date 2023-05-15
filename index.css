@@ -1,0 +1,217 @@
+/* fonts to use */
+/* | Oswald Bold - font-size: 18px;
+4 | Oswald Bold - font-size: 24px;
+8 | Oswald Bold - font-size: 24px;
+5 | Oswald Bold - font-size: 30px;
+Monserrat Regular - font-size: 18px
+7 | Oswald Bold - font-size: 30px;
+Monserrat Regular - font-size: 18px
+6 | Oswald Bold - font-size: 36px;
+Monserrat Regular - font-size: 21px
+9 | Oswald Bold - font-size: 21px;
+Monserrat Regular - font-size: 16px
+2 | Oswald Bold - font-size: 90px;
+3 | Montserrat Regular - font-size: 24px; */
+:root{
+    --headercolor:#2E323F;
+    --paragraphcolor:#6f737f3d;
+    --white:#FFFF;
+    --brownish:#A59678;
+    --darkish:#3B4050;
+    --bl:#6F737F;
+}
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.max{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.nav{
+    background-color:var(--headercolor);
+}
+.hero{
+    min-height: 100dvh;
+    /* min-height: 100svh; */
+    background-color: var(--darkish);
+    display: flex;
+    flex-direction: column;
+
+}
+.hero--h1{
+  font-size: 3em;  
+  color: var(--white);
+  /* font-family: Oswald-Bold; */
+}
+.firstdiv{
+    padding-inline: 1rem;
+    padding-top:1em;
+}
+.hero--span{
+    color: var(--brownish);
+}
+.paragraph--color{
+    color: var(--white);
+}
+.hero--button{
+    padding: .3em 1.4em;
+    background-color: var(--brownish);
+    outline: transparent;
+    border-radius:25px ;
+    text-transform: uppercase;
+    color: var(--white);
+}
+.seconddiv{
+    padding-inline: 1em;
+    padding-block: 2em;
+}
+.second-container--image{
+    max-width: 100%;
+    padding-block: 1em;
+}
+.button{
+    padding-block: 2em;
+}
+.maincontainer{
+    padding-inline: 1em;
+    padding-block: 1.6em;
+    background-color: var(--paragraphcolor);
+}
+.maincontainer--div{
+    padding-block: 1em;
+    text-align: center;
+}
+.h2-general{
+    color: var(
+        --brownish
+    );
+    text-transform: capitalize;
+}
+.maincontainer--paragraph{
+    color: var(--darkish)
+}
+.second-container{
+    padding-inline: 1.3em;
+    padding-block: 2em;
+    text-align: center;
+    color: var(--darkish);
+}
+.second-container--paragraph{
+    padding-block: 1.6em;
+}
+.card-container{
+    padding-block: 1.2em;
+}
+.card{
+    background-color: var(--headercolor);
+    color: var(--white);
+    padding-block: 2em;
+    margin-block: 1em;
+}
+.card--title{
+text-transform: capitalize;
+}
+footer{
+    background: var(--darkish);
+}
+.center{
+    text-align: center;
+}
+.footer--h1{
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 2em;
+}
+.footer-divs{
+    padding-inline: 2em;
+    padding-block: 2em;
+}
+.footer--h4{
+    text-transform: capitalize;
+    color: var(--brownish);
+    padding-block: 1em;
+}
+.footer--p{
+    color: var(--bl);
+}
+li{
+    list-style-type: none;
+}
+ a{
+    text-decoration: none;
+    color:var(--bl) ;
+}
+@media (min-width:700px) and (max-width:999px) {
+    .card-container{
+        display: flex;
+        gap: 1em;
+    }
+    .footer-divs{
+        display: flex;
+        gap: 1em;
+        justify-content: center;
+    }
+    .footer-div1{
+        width: 40%;
+    }
+    .maincontainer{
+        display: flex;
+        gap: 1rem;
+    }
+    .hero{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+align-items: center;
+    }
+    .firstdiv{
+        width: 40%;
+    }
+    .seconddiv{
+        width: 40%;
+    }
+}
+@media (min-width:1000px) {
+    .maincontainer{
+        display: flex;
+        gap: 1rem;
+    }
+    .second-container{
+        display: flex;
+        gap: 1rem;
+        padding-inline: 1rem;
+    }
+    .footer-divs{
+        display: flex;
+        gap: 2.5em;
+        justify-content: center;
+    }
+    .footer-div1{
+        width: 40%;
+    }
+    li{
+        list-style-type: none;
+        padding-block: .5em;
+    }
+    a{
+        padding-block: 2em;
+    }
+    .hero{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+align-items: center;
+gap: 1em;
+padding-inline: 2em;
+    }
+    .firstdiv{
+        width: 30%;
+    }
+    .seconddiv{
+        width: 50%;
+    }
+}
